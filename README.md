@@ -14,9 +14,13 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 contract DegenToken is ERC20, Ownable {
+
     // Mapping for item prices
+    
     mapping (string => uint256) public itemPrices;
+    
     // Array to keep track of item names
+    
     string[] private itemNames;
 
     // Event for minting tokens
